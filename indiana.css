@@ -1,0 +1,189 @@
+* { box-sizing: border-box; }
+
+body { background-color: #F5F5DC;
+       color: #666666;
+	   font-family: Verdana, Arial, sans-serif;
+        margin: 0;
+}
+
+#wrapper { background-color: #FFFFFF;
+}
+
+header { background-color: #002171;
+         color: #FFFFFF;
+		 font-family: Georgia, serif;
+		 padding: 1em;
+}
+
+header a:link       { color: #5C7FA3; }
+
+header a:visited { color: #344873; }
+
+header a { text-decoration: none; }
+
+header a:hover     { color: #A52A2A; }
+
+h1 {font-size: 1.5em;
+      text-align: center;
+ }
+
+h2 { color: #1976D2;;
+     font-family: Georgia, serif; 
+}
+
+h3 { font-family: Georgia, serif; }
+
+nav { background-color: #FFFFFF;
+     text-align: center;
+     font-size: 1.2em;
+}
+
+nav a { text-decoration: none; }
+
+nav a:link {color: #5C7FA3;}
+
+nav a:visited {color: #344873;}
+
+nav a:hover {color: #A52A2A;}
+
+nav ul {
+     display: flex;
+     flex-direction: column;
+     list-style-type: none;
+     margin: 0;
+     padding-left: 0;
+}
+
+nav li {
+     padding: 0.5em 1em;
+     width: 100%;
+     border-bottom: 1px solid;
+}
+
+main {
+     padding-top: 0;
+     padding-bottom: 0; 
+     padding-left: 1em;
+       padding-right: 1em;
+       display: block; }
+
+dt { color: #002171;
+     font-weight: bold;
+}
+
+.resort { color: #1976D2;
+          font-size: 1.2em;
+}
+
+#indyCity { height: 325px;
+            background-image: url(downtownpic1.jpg);
+  			background-repeat: no-repeat;
+            background-size: 100% 150%;
+           }
+
+#indyRest { height: 325px;
+            background-image: url(indRestaurant.jpg);
+  			background-repeat: no-repeat;
+            background-size: 100% 100%;
+           }
+
+#trailhero { height: 300px;
+            background-image: url(trail.jpg);
+  			background-repeat: no-repeat;
+            background-size: 200% 100%;
+           }
+
+#reshero { height: 300px;
+            background-image: url(ocean.jpg);
+  			background-repeat: no-repeat;
+            background-size: 200% 100%;
+           }
+
+section {
+     padding-left: 0.5em;
+     padding-right: 0.5em;
+}
+
+#mobile  { display: inline; }	
+
+#desktop { display: none; }
+
+footer { font-size: .70em;
+         font-style: italic;
+		 text-align: center;
+		 padding: 1em;
+           background-color: #FFFFFF;
+}
+
+table {
+     margin: 0 auto;
+     border: 1px solid #3399CC;
+     width: 90%;
+     border-collapse: collapse;
+}
+
+td, th {
+     padding: 5px;
+     border: 1px solid #3399CC;
+}
+
+td {text-align: center;}
+
+.text {text-align: left;}
+
+tr:nth-of-type(even){
+     background-color: #DFEDF8;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     padding-left: 1em; width: 80%;
+}
+
+input, textarea {margin-bottom: .5em;}
+
+video{
+     float: right;
+     margin: 2em;
+}
+
+@media (min-width: 600px) {
+    h1 {font-size: 2em;
+         letter-spacing: .25em;}
+    nav ul {flex-flow: nowrap;
+            justify-content: space-around;
+            padding-right: 2em;}
+    nav li {width: 12em;
+            border-bottom: none;}
+    section {padding-left: 2em;
+             padding-right: 2em;}
+    #flow {display: flex;
+           flex-direction: row;}
+    #mobile {display: none;}
+    #desktop {display: inline;}
+    #homehero {background-size: 100% 100%;}
+    #yurthero {background-size: 100% 100%;}
+    #trailhero {background-size: 100% 100%;}
+    #reshero {background-size: 100% 100%;}
+    form {
+         width: 60%;
+         display: grid;
+         grid-gap: 1em;
+         gap: 1em;
+         grid-template-columns: 10em 1fr;
+    }
+    input [type="submit"] {
+         grid-column: 2;
+         width: 9em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {background-image: linear-gradient(to bottom, #FFFFFF 20%,
+          #90C7E3 60%, #FFFFFF 100%); ;}
+    nav ul {padding-left: 10%;
+            padding-right: 10%;}
+    #wrapper {margin: auto;
+              width: 80%;}
+}
